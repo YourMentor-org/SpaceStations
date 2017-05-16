@@ -1,28 +1,54 @@
 *{
   padding: 0;
-  margin: 0 auto;
+  margin: 0
 }
 
 body{
-  width: 100%;
+  width: 1350px;
   height: 100%;
+  margin: 0 auto;
 }
 
 .header{
-  width: 1350px;
   height: 690px;
   background: url(img/header__background.png) center no-repeat;
+  padding: 0 180px 0 180px;
+}
+
+.header__menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.header__link{
+  width: 175px;
+}
+
+.header__nav{
+  width: 620px;
 }
 
 .default{
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .default__item{
   display: inline-block;
-  color: #fff;
   font-family: 'Montserrat-Bold';
   font-size: 14px;
+  line-height: 1.5;
+}
+
+.default__link{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .header__button{
@@ -35,6 +61,20 @@ body{
   border: 0px;
 }
 
+.header__about{
+  width: 720px;
+  height: 437px;
+  padding: 0 125px 0 145px;
+}
+
+.header__text{
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .header__pic{
   width: 60px;
   height: 60px;
@@ -45,10 +85,54 @@ body{
   font-family: 'Montserrat-Bold';
   font-size: 48px;
   text-transform: uppercase;
+  line-height: 1.5;
+  padding-top: 75px;
 }
 
 .header__subtitle{
   color: #fff;
   font-size: 14px;
-  font-family: 'Montserrat-Bold';
+  font-family: 'OpenSans';
+  line-height: 1.5;
+  padding-bottom: 60px;
+}
+
+.buttons{
+  width: 720px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.buttons__base{
+  height: 60px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.0;
+  border: none;
+}
+
+.buttons__base_left{
+  background-color: #59a3fc;
+  width: 175px;
+  border-radius: 20px 0 0 20px;
+}
+
+.buttons__base_right{
+  background-color: #3d92f9;
+  width: 175px;
+  border-radius: 0 20px 20px 0;
+}
+
+.buttons__base_circle{
+  position: relative;
+  right: 189px;
+  background-color: #0078b2;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
 }

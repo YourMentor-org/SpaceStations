@@ -1,0 +1,132 @@
+@media only screen and (max-width: 1023px){
+html,
+body {
+   height: 100%;
+   background-color: #333;
+   font-family: 'Helvetica', sans-serif;
+   color: white;
+}
+
+.bar{
+  position: relative;
+  left: 3px;
+  top: 15px;
+  background-color: #fff;
+  height: 6px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.bar:before{
+  content: "";
+  position: relative;
+  bottom: 8px;
+  float: right;
+  background-color: #fff;
+  height: 6px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.bar:after{
+  content: "";
+  float: right;
+  position: fixed;
+  top: 40px;
+  background-color: #fff;
+  height: 6px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.header__nav {
+   transition: all .25s;
+   position: relative;
+   border: 2px solid green;
+   left: 310px;
+   height: 36px;
+   width: 36px;
+   cursor: pointer;
+}
+
+.nav-list{
+  transition: all 0s;
+  position: fixed;
+  visibility: hidden;
+}
+
+.menu-expanded{
+   transition: all .25s;
+   text-align: center;
+   line-height: 30px;
+   height: 100%;
+   min-width: 100%;
+   border-radius: 0px;
+   top: 0;
+   left: 0;
+   background-color: #000;
+   z-index: 3;
+}
+
+.show{
+  visibility: visible;
+  transition: all 0s;
+  position: relative;
+  left: 10px;
+  top: 25px;
+  
+}
+
+.nav_list__item {
+      transition: all .15s;
+      text-decoration: none;
+      font-size: 1em;
+      padding: 5px;
+      color: #fff;
+      display: block;
+}
+
+.nav_list__link:hover{
+  transition: all .15s;
+  letter-spacing: 2px;
+  color:#39c;
+}
+/* make animation with icon hamburger after click */
+.bar-rot {
+  background-color: transparent;
+  transition: transform 0.3s;
+}
+
+.bar-rot:after{
+  position:fixed;
+  top: 32px;
+  right: 130px;
+  content: "";
+  background-color: #FFF;
+  transition: transform 0.3s;
+  transform: rotate(45deg);
+  z-index: 5;
+}
+
+.bar-rot:before{
+  content: "";
+  position: fixed;
+  top: 32px;
+  right: 130px;
+  background-color: #FFF;
+  transition: transform 0.3s;
+  transform: rotate(-45deg);
+  z-index: 5;
+}
+li:first-child {
+	border-top: 1px solid rgba(93,90,89,0.4);
+}
+
+li{
+	position: relative;
+	top: 20px;
+	border-bottom: 1px solid rgba(93,90,89,0.4);
+}
+
+
+}

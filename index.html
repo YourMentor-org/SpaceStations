@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,43 +18,57 @@
     <!-- Kamil's part -->
   </head>
   <body>
-    <div class="our-work">
-      <h1>Our work</h1>
-      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+    <section class="our-work">
+      <h2 class="our-work__title">Our work</h2>
+      <p class="our-work__paragraph">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
 
-      <div class="our-work__example">
-        <img src="" alt="Sylabus">
-        <button type="button" name="button">Sylabus</button>
+      <div class="our-work__examples">
+        <div class="our-work__examples example">
+          <img src="images/syllabus.png" alt="Sylabus">
+          <button type="button">Sylabus</button>
+        </div>
+
+        <div class="our-work__examples example">
+          <img src="images/Contest.png" alt="Contest">
+          <button type="button">Contest</button>
+        </div>
+
+        <div class="our-work__examples example">
+          <img src="images/Wayfaring.png" alt="Travel">
+          <button type="button">Travel</button>
+        </div>
+
+        <div class="our-work__examples example">
+          <img src="images/shop.png" alt="Shop">
+          <button type="button">Shop</button>
+        </div>
       </div>
 
-      <div class="our-work__example">
-        <img src="" alt="Contest">
-        <button type="button" name="button">Contest</button>
+      <div class="our-work__navigation">
+        <button type="button">
+          <img src="" alt="">
+        </button>
+        <button type="button">
+          <img src="" alt="">
+        </button>
       </div>
 
-      <div class="our-work__example">
-        <img src="" alt="Travel">
-        <button type="button" name="button">Travel</button>
-      </div>
+    </section>
 
-      <div class="our-work__example">
-        <img src="" alt="Shop">
-        <button type="button" name="button">Shop</button>
-      </div>
+    <section class="testimonials">
+      <h1 class="testimonials__title">Testimonials</h1>
+      <p class="testimonials__paragraph">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
 
-    </div>
-    <div class="testimonials">
-      <h1>Testimonials</h1>
-      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
-      <div class="testimonials__reviews">
-        <div class="testimonials__profile-pic">
+      <div class="testimonials__reviews reviews">
+        <div class="reviews__profile-pic">
           <img src="" alt="">
         </div>
-        <div class="testimonials__reviews review">
-
+        <div class="reviews__review">
+          
         </div>
       </div>
-    </div>
+
+    </section>
     <!-- End of Kamil's part -->
 
     <!-- Kamil's second part -->
@@ -62,12 +77,23 @@
     </div>
 
     <div class="partners">
-
+      <div class="partners__item">
+        <img src="" alt="">
+      </div>
+      <div class="partners__item">
+        <img src="" alt="">
+      </div>
+      <div class="partners__item">
+        <img src="" alt="">
+      </div>
+      <div class="partners__item">
+        <img src="" alt="">
+      </div>
     </div>
 
     <footer class="footer">
       <div class="footer__value">
-        <h5>Value</h5>
+        <h5 class="footer footer__value title">Value</h5>
         <ul>
           <li>About</li>
           <li>FAQ</li>
@@ -77,7 +103,7 @@
         </ul>
       </div>
       <div class="footer__affiliate">
-        <h5>Affiliate</h5>
+        <h5 class="footer footer__value title">Affiliate</h5>
         <ul>
           <li>NASA</li>
           <li>JAXA Japan</li>
@@ -86,7 +112,7 @@
         </ul>
       </div>
       <div class="footer__social">
-        <h5>Social</h5>
+        <h5 class="footer footer__value title">Social</h5>
         <ul>
           <li>Facebook</li>
           <li>Dribbble</li>
@@ -94,11 +120,14 @@
         </ul>
       </div>
       <div class="footer__get-served">
-        <h5>GET SERVED</h5>
-        <input type="text" name="" placeholder="user@email.com">
-        <input type="submit" name="" value="GO">
+        <h5 class="footer footer__value title">GET SERVED</h5>
+        <form>
+          <input type="text" name="" placeholder="user@email.com">
+          <button type="button" name="button">GO</button>
+        </form>
       </div>
     </footer>
+
 
   </body>
 </html>

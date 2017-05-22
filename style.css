@@ -17,7 +17,6 @@ body{
 
 .header__menu{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 70px;
@@ -36,7 +35,6 @@ body{
 .default{
   list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -70,12 +68,14 @@ body{
 .header__about{
   width: 100%;
   max-width: 720px;
-  height: 440px;
-  padding-left: 145px;
+  height: 100%;
+  max-height: 440px;
+  margin: 0 auto;
 }
 
 .header__text{
-  height: 380px;
+  height: 100%;
+  max-height: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,7 +105,6 @@ body{
 .buttons{
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -145,7 +144,6 @@ body{
 .slider{
   padding-top: 70px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
@@ -156,11 +154,8 @@ body{
   border: none;
   border-radius: 50%;
   opacity: 0.4;
-  margin-right: 18px;
-}
-
-.slider__button:last-child{
-  margin-right: 0px;
+  margin: 0 9px;
+  outline: none;
 }
 
 .slider__button_white{
@@ -183,11 +178,23 @@ body{
 .services{
   list-style-type: none;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
 .services__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.services__logo{
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  background-color: #cadaec;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,11 +210,6 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-}
-
-.services__pic{
-
 }
 
 .services__heading{
@@ -222,5 +224,219 @@ body{
   font-family: 'OpenSans', Arial, Helvetica;
   font-size: 14px;
   line-height: 1.5;
+}
+
+
+/* верстка section How we work */
+
+.timetable{
+  background-color: #fff;
+  height: 535px;
+  position: relative;
+}
+
+.timetable__text{
+  padding-top: 60px;
   text-align: center;
+}
+
+.timetable__heading{
+  font-size: 30px;
+  line-height: 2;
+  font-family: 'Montserrat-Bold', Arial, Helvetica;
+}
+
+.timetable__subtitle{
+  font-size: 14px;
+  line-height: 2;
+  font-family: 'OpenSans', Arial, Helvetica;
+}
+
+.timetable__main{
+  margin-top: 50px;
+  position: relative;
+}
+
+.timetable__line{
+  margin: 0 auto;
+  width: 3px;
+  height: 250px;
+  background-color: #d2d3d7;
+}
+
+.timetable__line::before{
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid #d2d3d7;
+  position: absolute;
+  left: 663px;
+  top: -20px;
+}
+
+.timetable__line::after{
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid #d2d3d7;
+  position: absolute;
+  bottom: -23px;
+  left: 663px;
+}
+
+.window{
+  width: 436px;
+  height: 90px;
+  border: 2px solid #e1e5eb;
+  position: absolute;
+}
+
+.window_left{
+  left: 180px;
+  bottom: 30px;
+}
+
+.window_left::after{
+  content: "";
+  display: block;
+  width: 440px;
+  height: 5px;
+  background-color: #ff1e4f;
+  position: absolute;
+  bottom: -3px;
+  left: -2px;
+}
+
+.window_left::before{
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #ff1e4f;
+  position: absolute;
+  top: 45px;
+  right: -63px;
+}
+
+.window_right{
+  right: 180px;
+  top: 20px;
+}
+
+.window_right::after{
+  content: "";
+  display: block;
+  width: 440px;
+  height: 5px;
+  background-color: #4fb1f3;
+  position: absolute;
+  bottom: -3px;
+  left: -2px;
+}
+
+.window_right::before{
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: #4fb1f3;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  left: -63px;
+}
+
+.timetable__button{
+  width: 170px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  line-height: 2.7;
+  border-radius: 10px;
+  background-color: #ff1e4f;
+  color: #fff;
+  font-family: 'OpenSans', Arial, Helvetica;
+  position: absolute;
+  left: 580px;
+  bottom: -18px;
+}
+
+/* section team*/
+
+.team{
+  padding-top: 50px; /*для себя отступ по идее будет потом блок Камиля*/
+  background-color: #fff;
+  height: 490px;
+}
+
+.team__text{
+  text-align: center;
+}
+
+.team__title{
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: 'Montserrat-Bold', Arial, Helvetica;
+}
+
+.team__subtitle{
+  padding-top: 42px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'OpenSans', Arial, Helvetica;
+}
+
+.catalog{
+  padding-top: 60px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.catalog__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.catalog__item::before{
+  content: "1";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  border: 2px solid #fff;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'OpenSans', Arial, Helvetica;
+  color: #fff;
+  text-align: center;
+  top: 40px;
+  left: 20px;
+}
+
+.catalog__title{
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.5;
+  font-family: 'Montserrat-Bold', Arial, Helvetica;
+}
+
+.catalog__subtitle{
+  padding-top: 13px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: 'OpenSans', Arial, Helvetica;
 }

@@ -43,7 +43,7 @@ body {
    transition: all .25s;
    position: absolute;
    right: 0;
-   border: 2px solid green;
+/*    border: 2px solid green; */
    height: 36px;
    width: 36px;
    cursor: pointer;

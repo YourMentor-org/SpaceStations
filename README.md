@@ -1,3 +1,3 @@
 # SpaceStations
 
-[static](https://github.com/stati15/)
+[static](https://github.com/static15/)

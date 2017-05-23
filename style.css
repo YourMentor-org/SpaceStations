@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.our-work{
+  background-color: #e7eef6;
+}
+
+.our-work__title, .testimonials__title{
+  margin-top: 80px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Montserrat-Bold', Arial, Helvetica;
+}
+
+.our-work__paragraph, .testimonials__paragraph{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'OpenSans', Arial, Helvetica;
+}
+
+.our-work__examples{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 720px;
+}
+
+
+.our-work__examples .example{
+  flex-basis: 50%;
+}
+
+
+.example button{
+  position: absolute;
+}
+
+/* testimonials */
+
+.testimonials__reviews{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.reviews__profile-pic{
+  margin-top: 70px;
+}
+
+.reviews__review{
+  margin-top: 70px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(224, 224, 224);
+  background-color: rgb(255, 255, 255);
+  width: 480px;
+  height: 175px;
+}
+
+.review__title, .review__paragraph{
+  margin-left: 35px;
+}
+
+.review__title{
+  font-size: 18px;
+  margin-top: 25px;
+  font-family: 'Montserrat-Bold', Arial, Helvetica;
+}
+
+.review__title span{
+  font-size: 12px;
+
+}
+
+.review__paragraph{
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 2.5;
+  font-family: 'OpenSans', Arial, Helvetica;
+}
+
+/* partners */
+.partners{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #111111;
+  height: 140px;
+}
+
+.partners__item{
+  margin-top: 35px;
+}
+
+
+/* footer */
+
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  justify-content: space-around;
+}
+
+.footer__options .title, .footer__get-served .title{
+  margin-top: 40px;
+}
+
+.footer__options .title, .list, .footer__get-served .title, .form__title{
+  color: white;
+  font-family: 'OpenSans', Arial, Helvetica;
+}
+
+.list{
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form__title{
+  font-size: 14px;
+  color: white;
+}
+
+.form__button{
+  background-color: #555555;
+  width: 45px;
+  height: 40px;
+}
+
+.form__input{
+  height: 40px;
+  width: 300px;
+  background-color: #363636;
+  border: 0;
+}

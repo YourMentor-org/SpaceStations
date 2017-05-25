@@ -7,6 +7,7 @@ body{
   max-width: 1350px;
   height: 100%;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .header{
@@ -167,12 +168,12 @@ body{
 
 .base{
   background-color: #e7eef6;
-  height: 290px;
 }
 
-.base__nav{
-  padding: 0 180px;
-  padding-top: 30px;
+.base__list{
+  padding: 30px 0;
+  max-width: 990px;
+  margin: 0 auto;
 }
 
 .services{
@@ -187,6 +188,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 30px;
 }
 
 .services__logo{
@@ -230,8 +232,6 @@ body{
 /* верстка section How we work */
 
 .timetable{
-  background-color: #fff;
-  height: 535px;
   position: relative;
 }
 
@@ -253,8 +253,9 @@ body{
 }
 
 .timetable__main{
-  margin-top: 50px;
+  padding-top: 50px;
   position: relative;
+  padding-bottom: 120px;
 }
 
 .timetable__line{
@@ -262,6 +263,7 @@ body{
   width: 3px;
   height: 250px;
   background-color: #d2d3d7;
+  position: relative;
 }
 
 .timetable__line::before{
@@ -269,12 +271,12 @@ body{
   display: block;
   width: 17px;
   height: 17px;
-  background-color: white;
   border-radius: 50%;
   border: 3px solid #d2d3d7;
   position: absolute;
-  left: 663px;
   top: -20px;
+  left: -9px;
+
 }
 
 .timetable__line::after{
@@ -282,12 +284,11 @@ body{
   display: block;
   width: 17px;
   height: 17px;
-  background-color: white;
   border-radius: 50%;
   border: 3px solid #d2d3d7;
   position: absolute;
-  bottom: -23px;
-  left: 663px;
+  top: 250px;
+  right: -9px;
 }
 
 .window{
@@ -299,18 +300,14 @@ body{
 
 .window_left{
   left: 180px;
-  bottom: 30px;
+  top: 175px;
+  border-bottom: 5px solid #ff1e4f;
 }
 
 .window_left::after{
   content: "";
   display: block;
-  width: 440px;
-  height: 5px;
-  background-color: #ff1e4f;
-  position: absolute;
-  bottom: -3px;
-  left: -2px;
+  /*в будущем треугольник будет ПСЫ нужен созвон*/
 }
 
 .window_left::before{
@@ -327,18 +324,14 @@ body{
 
 .window_right{
   right: 180px;
-  top: 20px;
+  top: 60px;
+  border-bottom: 5px solid #4fb1f3;
 }
 
 .window_right::after{
   content: "";
   display: block;
-  width: 440px;
-  height: 5px;
-  background-color: #4fb1f3;
-  position: absolute;
-  bottom: -3px;
-  left: -2px;
+
 }
 
 .window_right::before{
@@ -353,8 +346,26 @@ body{
   left: -63px;
 }
 
+.window__text{
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+.window__title{
+  font-size: 14px;
+  line-height: 1.5;
+  color: #717171;
+  font-family: 'Montserrat-Bold', Arial, Helvetica;
+}
+
+.window__subtitle{
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9c9c9c;
+  font-family: 'OpenSans', Arial, Helvetica;
+}
+
 .timetable__button{
-  width: 170px;
   border: none;
   cursor: pointer;
   outline: none;
@@ -364,17 +375,15 @@ body{
   background-color: #ff1e4f;
   color: #fff;
   font-family: 'OpenSans', Arial, Helvetica;
+  padding: 0 18px;
   position: absolute;
-  left: 580px;
-  bottom: -18px;
+  left: calc(50% - 85px);
 }
 
 /* section team*/
 
 .team{
   padding-top: 50px; /*для себя отступ по идее будет потом блок Камиля*/
-  background-color: #fff;
-  height: 490px;
 }
 
 .team__text{
@@ -401,11 +410,17 @@ body{
   justify-content: space-around;
 }
 
+.team__menu{
+  padding-bottom: 90px;
+}
+
 .catalog__item{
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  text-align: center;
+  min-width: 180px;
 }
 
 .catalog__item::before{
@@ -424,10 +439,22 @@ body{
   text-align: center;
   top: 40px;
   left: 20px;
+  line-height: 40px;
+}
+
+.catalog__item:nth-child(2):before{
+  content: "2";
+}
+
+.catalog__item:nth-child(3):before{
+  content: "3";
+}
+
+.catalog__item:nth-child(4):before{
+  content: "4";
 }
 
 .catalog__title{
-  text-align: center;
   font-size: 19px;
   line-height: 1.5;
   font-family: 'Montserrat-Bold', Arial, Helvetica;
@@ -435,8 +462,11 @@ body{
 
 .catalog__subtitle{
   padding-top: 13px;
-  text-align: center;
   font-size: 12px;
   line-height: 1.5;
   font-family: 'OpenSans', Arial, Helvetica;
+}
+
+.catalog__icons{
+  padding-top: 20px;
 }

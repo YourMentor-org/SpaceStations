@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,116 +23,124 @@
     <section class="header">
       <header class="header__menu">
         <a href="#" class="header__link">
-            <img src="" alt="logo" class="header__img">
+            <img src="img/logo_top.png" alt="logo" class="header__img">
         </a>
         <nav class="header__nav">
           <ul class="default">
-            <li class="default__item">services</li>
-            <li class="default__item">how</li>
-            <li class="default__item">ourwork</li>
-            <li class="default__item">testimonials</li>
-            <li class="default__item">team</li>
-            <li class="default__item">contact us</li>
+            <li class="default__item"><a href="#" class="default__link">services</a></li>
+            <li class="default__item"><a href="#" class="default__link">how</a></li>
+            <li class="default__item"><a href="#" class="default__link">ourwork</a></li>
+            <li class="default__item"><a href="#" class="default__link">testimonials</a></li>
+            <li class="default__item"><a href="#" class="default__link">team</a></li>
+            <li class="default__item"><a href="#" class="default__link">contact us</a></li>
           </ul>
         </nav>
         <button class="header__button">Sign in</button>
       </header>
       <div class="header__about">
         <div class="header__text">
-          <img src="" alt="" class="header__pic">
+          <img src="img/Rocket.png" alt="Rocket" class="header__pic" width="60" height="60">
           <h1 class="header__heading">Let`s explore the sky!</h1>
           <p class="header__subtitle">This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet.</p>
         </div>
         <div class="buttons">
-          <button class="buttons__about buttons__about_left">Learn more</button>
-          <button class="buttons__explore buttons__explore_right">Contact us</button>
-          <button class="buttons__or buttons__or_circle">or</button>
+          <button class="buttons__base buttons__base_left">Learn more</button>
+          <button class="buttons__base buttons__base_right">Contact us</button>
+          <button class="buttons__base buttons__base_circle">or</button>
         </div>
-        <div class="header__slider">
-        </div>
+      </div>
+      <div class="slider">
+        <button class="slider__button slider__button_white"></button>
+        <button class="slider__button"></button>
+        <button class="slider__button"></button>
       </div>
     </section>
     <section class="base">
-      <nav class="base__nav">
+      <div class="base__list">
         <ul class="services">
           <li class="services__item">
-            <img src="" alt="" class="services__logo services__logo_web">
+            <span class="services__logo">
+              <img src="img/logo-web.png" alt="" class="services__pic services__pic_web" width="40" height="40">
+            </span>
             <h2 class="services__heading">Web Design</h2>
-            <p class="services__text">This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet.</p>
+            <p class="services__text">This is&nbsp;Photoshop`s version of&nbsp;Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.</p>
           </li>
           <li class="services__item">
-            <img src="" alt="" class="services__logo services__logo_web">
-            <h2 class="services__heading">Web Design</h2>
-            <p class="services__text">This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet.</p>
+            <span class="services__logo">
+              <img src="img/logo-design.png" alt="" class="services__pic services__pic_anchor" width="40" height="40">
+            </span>
+            <h2 class="services__heading">Logo Design</h2>
+            <p class="services__text">This is&nbsp;Photoshop`s version of&nbsp;Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.</p>
           </li>
           <li class="services__item">
-            <img src="" alt="" class="services__logo services__logo_print">
-            <h2 class="services__heading">Web Design</h2>
-            <p class="services__text">This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet.</p>
+            <span class="services__logo">
+              <img src="img/logo-print.png" alt="" class="services__pic services__pic_print" width="40" height="40">
+            </span>
+            <h2 class="services__heading">Print Design</h2>
+            <p class="services__text">This is&nbsp;Photoshop`s version of&nbsp;Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.</p>
           </li>
         </ul>
-      </nav>
-    </section>
-    <section class="algorithm">
-      <div class="algorithm__text">
-        <h1 class="algorithm__heading">How we work</h1>
-        <p class="algorithm__subtitle">This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet.</p>
       </div>
-      <div class="algorithm__main">
-        <div class="algorithm__line">
-          <img src="" alt="" class="algorithm__circle algorithm__circle_begin">
-          <img src="" alt="" class="algorithm__circle algorithm__circle_blue">
-          <img src="" alt="" class="algorithm__circle algorithm__circle_red">
-          <img src="" alt="" class="algorithm__circle algorithm__circle_finish">
-          <div class="algorithm__dropdown algorithm__dropdown_red">
-            <h2 class="algorithm__caption">Client contact us</h2>
-            <p class="algorithm__desc">This is Photoshop's version  of Lorem Ipsum.</p>
+    </section>
+    <section class="timetable">
+      <div class="timetable__text">
+        <h1 class="timetable__heading">How we work</h1>
+        <p class="timetable__subtitle">This is&nbsp;Photoshop`s version of&nbsp;Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.</p>
+      </div>
+      <div class="timetable__main">
+        <div class="timetable__line"></div>
+        <div class="window window_left">
+          <div class="window__text">
+            <h3 class="window__title">We will discuss do you want</h3>
+            <p class="window__subtitle">This is Photoshop`s version of Loram Ipsum.</p>
           </div>
-          <div class="algorithm_dropdown algorithm__dropdown_blue">
-            <h2 class="algorithm__caption">Client contact us</h2>
-            <p class="algorithm__desc">This is Photoshop's version  of Lorem Ipsum.</p>
+        </div>
+        <div class="window window_right">
+          <div class="window__text">
+            <h3 class="window__title">Client contact us</h3>
+            <p class="window__subtitle">This is Photoshop`s version of Loram Ipsum.</p>
           </div>
         </div>
       </div>
-      <button class="algorithm__button algorithm__button_red">See all how we work</button>
+      <button class="timetable__button timetable__button_red">See all how we work</button>
     </section>
     <section class="team">
       <div class="team__text">
-        <h2 class="team__title"></h2>
-        <p class="team__subtitle"></p>
+        <h2 class="team__title">Meet the team</h2>
+        <p class="team__subtitle">This is&nbsp;Photoshop`s version of&nbsp;Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.</p>
       </div>
       <div class="team__menu">
         <ul class="catalog">
           <li class="catalog__item">
-            <img src="" alt="" class="catalog__photo">
+            <img src="img/first__photo.png" alt="" class="catalog__photo" width="120" height="120">
             <h3 class="catalog__title">Afnizar Nur Ghifari</h3>
             <p class="catalog__subtitle">Chief Executive Officer</p>
             <a href="#" class="catalog__social">
-              <img src="" alt="" class="catalog__icons">
+              <img src="img/social.png" alt="social" class="catalog__icons">
             </a>
           </li>
           <li class="catalog__item">
-            <img src="" alt="" class="catalog__photo">
+            <img src="img/second__photo.png" alt="" class="catalog__photo" width="120" height="120">
             <h3 class="catalog__title">Henry Phillips</h3>
             <p class="catalog__subtitle">Black Belt UI/UX Strategist</p>
             <a href="#" class="catalog__social">
-              <img src="" alt="" class="catalog__icons">
+              <img src="img/social.png" alt="social" class="catalog__icons">
             </a>
           </li>
           <li class="catalog__item">
-            <img src="" alt="" class="catalog__photo">
+            <img src="img/third__photo.png" alt="" class="catalog__photo" width="120" height="120">
             <h3 class="catalog__title">Gerald Elliott</h3>
             <p class="catalog__subtitle">Lead User Experience Manager</p>
-            <a href="#" class="catalog__social">
-              <img src="" alt="" class="catalog__icons">
+            <a href="#" class="caimg/first__photo.pngtalog__social">
+              <img src="img/social.png" alt="social" class="catalog__icons">
             </a>
           </li>
           <li class="catalog__item">
-            <img src="" alt="" class="catalog__photo">
+            <img src="img/fourth__photo.png" alt="" class="catalog__photo" width="120" height="120">
             <h3 class="catalog__title">Read Alexander</h3>
             <p class="catalog__subtitle">Lead User Experience Manager</p>
             <a href="#" class="catalog__social">
-              <img src="" alt="" class="catalog__icons">
+              <img src="img/social.png" alt="social" class="catalog__icons">
             </a>
           </li>
         </ul>

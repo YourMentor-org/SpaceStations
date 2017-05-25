@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('montserrat-bold.eot');
+	src: url('montserrat-bold.eot') format('embedded-opentype'),
+    	 url('montserrat-bold.woff') format('woff'),
+       url('montserrat-bold.woff2') format('woff2'),
+    	 url('montserrat-bold.ttf') format('truetype'),
+       url('montserrat-bold.svg#Montserrat-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('opensans-regular.eot');
+	src: url('opensans-regular.eot') format('embedded-opentype'),
+    	 url('opensans-regular.woff') format('woff'),
+       url('opensans-regular.woff2') format('woff2'),
+    	 url('opensans-regular.ttf') format('truetype'),
+       url('opensans-regular.svg#OpenSans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

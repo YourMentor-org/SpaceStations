@@ -5,34 +5,39 @@
 
 .our-work{
   background-color: #e7eef6;
+
 }
 
 .our-work__title, .testimonials__title{
-  margin-top: 80px;
+  padding-top: 80px;
   text-align: center;
   font-size: 30px;
   font-family: 'Montserrat-Bold', Arial, Helvetica;
 }
 
 .our-work__paragraph, .testimonials__paragraph{
-  margin-top: 40px;
+  padding-top: 40px;
   text-align: center;
   font-size: 14px;
   font-family: 'OpenSans', Arial, Helvetica;
 }
 
 .our-work__examples{
-  margin-top: 50px;
+  padding-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  flex-basis: 720px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: -20px;
 }
 
 
+
 .our-work__examples .example{
-  flex-basis: 50%;
+  width: 350px;
+  height: 220px;
 }
 
 
@@ -40,32 +45,36 @@
   position: absolute;
 }
 
+
+
+
+
 /* testimonials */
 
 .testimonials__reviews{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 100px;
+  margin-top: 70px;
 }
 
 
 .reviews__profile-pic{
-  margin-top: 70px;
+
 }
 
 .reviews__review{
-  margin-top: 70px;
+
   border-style: solid;
   border-width: 2px;
   border-color: rgb(224, 224, 224);
   background-color: rgb(255, 255, 255);
   width: 480px;
   height: 175px;
+  padding: 0 35px 0 35px;;
 }
 
-.review__title, .review__paragraph{
-  margin-left: 35px;
-}
 
 .review__title{
   font-size: 18px;
@@ -75,7 +84,11 @@
 
 .review__title span{
   font-size: 12px;
+}
 
+.review__title span::before{
+  content: "/ ";
+  font-size: 18px;
 }
 
 .review__paragraph{
@@ -85,20 +98,79 @@
   font-family: 'OpenSans', Arial, Helvetica;
 }
 
+/* partners */
+.partners{
+  background-color: #111111;
+
+}
+
+.partners__container{
+  max-width: 815px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 35px 0 35px 0;
+}
+
+
+
+
 /* footer */
 
 
 .footer{
+  background-color: #000000;
   display: flex;
   flex-direction: row;
-  background-color: #000000;
-  justify-content: space-around;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+
+.footer__options .title, .footer__get-served .title{
+  margin-top: 40px;
+}
+
+.footer__options .title, .list, .footer__get-served .title, .form__title{
+  color: white;
+  font-family: 'OpenSans', Arial, Helvetica;
 }
 
 .list{
   list-style: none;
-  color: white;
   font-size: 14px;
   font-weight: bold;
-  font-family: 'OpenSans', Arial, Helvetica;
+}
+
+.form__title{
+  font-size: 14px;
+  color: white;
+}
+
+.huinya{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 700px;
+
+}
+
+.form__button{
+  background-color: #555555;
+  width: 45px;
+  height: 40px;
+  border-width: 0;
+  outline: none;
+}
+
+.form__input{
+  height: 40px;
+  width: 300px;
+  background-color: #363636;
+  border: 0;
+}
+
+.footer__get-served{
+  margin: 0 auto;
 }

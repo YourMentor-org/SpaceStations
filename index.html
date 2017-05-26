@@ -25,17 +25,17 @@
 
       <div class="our-work__examples">
         <div class="our-work__examples example">
-          <img src="images/syllabus.png" alt="Sylabus">
+          <img src="images/Syllabus.png" alt="Sylabus">
           <button type="button">Sylabus</button>
         </div>
 
         <div class="our-work__examples example">
-          <img src="images/Contest.png" alt="Contest">
+          <img src="images/contest.png" alt="Contest" class="example__image">
           <button type="button">Contest</button>
         </div>
 
         <div class="our-work__examples example">
-          <img src="images/Wayfaring.png" alt="Travel">
+          <img src="images/Wayfaring.png" alt="Travel" class="example__image">
           <button type="button">Travel</button>
         </div>
 
@@ -45,12 +45,12 @@
         </div>
       </div>
 
-      <div class="our-work__navigation">
-        <button type="button">
-          <img src="" alt="">
+      <div class="our-work__navigation arrow">
+        <button type="button" class="arrow__left">
+
         </button>
         <button type="button">
-          <img src="" alt="">
+
         </button>
       </div>
 
@@ -65,7 +65,7 @@
           <img src="images/profile-pic.png" alt="profile-pic">
         </div>
         <div class="reviews__review review">
-          <h3 class="review__title">Neil Armstrong / <span>1st man walk on the moon</span></h3>
+          <h3 class="review__title">Neil Armstrong <span>1st man walk on the moon</span></h3>
           <p class="review__paragraph">“ Orion is great, you should try it.
              The component is very easy to understand,
              the value is great too. And last but not least, orion is my favorite services.”</p>
@@ -80,22 +80,29 @@
 
     </div>
 
+  <!-- Parters -->
+
     <div class="partners">
-      <div class="partners__item">
-        <img src="logos/nasa_logo.png" alt="">
-      </div>
-      <div class="partners__item">
-        <img src="logos/jaxa_logo.png" alt="">
-      </div>
-      <div class="partners__item">
-        <img src="logos/boeing_logo.png" alt="">
-      </div>
-      <div class="partners__item">
-        <img src="logos/cnn-logo.png" alt="">
+      <div class="partners__container logos">
+        <div class="logos__item">
+          <img src="logos/nasa_logo.png" alt="">
+        </div>
+        <div class="logos__item">
+          <img src="logos/jaxa_logo.png" alt="">
+        </div>
+        <div class="logos__item">
+          <img src="logos/boeing_logo.png" alt="">
+        </div>
+        <div class="logos__item">
+          <img src="logos/cnn-logo.png" alt="">
+        </div>
       </div>
     </div>
 
+<!--Footer -->
+
     <footer class="footer">
+    <div class="huinya">
       <div class="footer__options">
         <h4 class="footer__options title">VALUE</h4>
         <ul class="footer__options list">
@@ -123,13 +130,15 @@
           <li>Twitter</li>
         </ul>
       </div>
+      </div>
+
       <div class="footer__get-served">
         <h4 class="footer__get-served title">GET SERVED</h4>
         <form class="footer__get-served form">
           <input type="text" name="" placeholder="user@email.com" class="form__input">
-          <button type="button" name="button"><div class="form__button">
+          <button type="button" name="button" class="form__button">
             <h5 class="form__title">GO</h5>
-          </div>
+
         </button>
         </form>
       </div>

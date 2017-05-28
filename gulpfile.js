@@ -18,7 +18,7 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('out'));
 });
 
-gulp.task('default', ['scripts', 'styles']);
+gulp.task('default', ['scripts', 'styles', 'clean']);
 
 gulp.task('scripts', function () {
 	gulp.src('main.js')

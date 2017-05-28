@@ -7,7 +7,7 @@ var clean = require('gulp-clean');
 var cssnano = require('gulp-cssnano');
 var autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('test', function() {
+gulp.task('styles', function() {
 	return gulp.src('/*.css')
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
@@ -27,7 +27,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('main.js')
+	gulp.watch(['main.js', 'main.css, index.html'])
 });
 
 gulp.task('clean', function() {

@@ -1,0 +1,31 @@
+{
+  "name": "spacestations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YourMentor-org/SpaceStations.git"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YourMentor-org/SpaceStations/issues"
+  },
+  "homepage": "https://github.com/YourMentor-org/SpaceStations#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-svg2png": "^2.0.2",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-uglify": "^3.0.0"
+  }
+}

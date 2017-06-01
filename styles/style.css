@@ -30,19 +30,35 @@
   flex-wrap: wrap;
   max-width: 720px;
   margin: 0 auto;
-  padding-top: -20px;
+
+
 }
 
 
 
-.our-work__examples .example{
-  width: 350px;
-  height: 220px;
+.example{
+  max-width: 300px;
+  max-height: 200px;
+  padding-top: 10px
 }
 
 
 .example button{
   position: absolute;
+  margin-top: 150px;
+  margin-left: -100px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.651;
+  position: absolute;
+  width: 120px;
+  height: 34px;
+  z-index: 74;
+  font-family: 'OpenSans', Arial, Helvetica;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  border-width: 0;
+  outline: none;
 }
 
 
@@ -64,16 +80,27 @@
 
 }
 
-.reviews__review{
+/*
+.reviews__review::before{
+  content: '';
+   border: 10px solid transparent;
+   border-right: 10px solid #e0e0e0;
+   position: absolute;
 
+}
+*/
+
+.reviews__review{
+  margin-left: 20px;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(224, 224, 224);
   background-color: rgb(255, 255, 255);
   width: 480px;
   height: 175px;
-  padding: 0 35px 0 35px;;
+  padding: 0 35px 0 35px;
 }
+
 
 
 .review__title{

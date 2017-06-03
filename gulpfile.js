@@ -8,6 +8,7 @@ var gulp = require(`gulp`),
     cssnano = require(`gulp-cssnano`),
     autoprefixer = require(`gulp-autoprefixer`);
     browserSync = require(`browser-sync`).create();
+    spritesheet = require(`gulp-svg-spritesheet`);
 
 
 gulp.task(`styles`, function() {
@@ -42,10 +43,21 @@ gulp.task(`browser-sync`, function() {
   });
 });
 
+gulp.task(`image`, function () {
+    gulp.src(`./css/img/`)
+        .pipe(imagemin())
+        .pipe(svg2png())
+        .pipe(svgmin())
+        .pipe(spritesheet())
+        .pipe(gulp.dest(`build/img/`));
+});
+
+
 gulp.task(`default`, [`clean`], function() {
   gulp.run(`styles`);
   gulp.run(`html`);
   gulp.run(`browser-sync`);
+  gulp.run(`image`);
 });
 
 gulp.task(`watch`, function() {

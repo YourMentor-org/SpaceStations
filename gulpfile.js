@@ -20,10 +20,9 @@ gulp.task('styles', function() {
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
-		.pipe(concatCss("*./src/styles/.css"))
-		.pipe(cssnano())
+		.pipe(concatCss('styles/bundle.css'))
 		.pipe(cleanCSS({compatibility: 'ie8'}))
-		.pipe(gulp.dest('out'));
+		.pipe(gulp.dest('out/'));
 });
 
 gulp.task('clean', function() {
@@ -33,7 +32,7 @@ gulp.task('clean', function() {
 
 
 gulp.task('watch', function() {
-	gulp.watch(['src/js/*.js', 'src/styles/*.css', '*.html'])
+	gulp.watch(['src/js/*.js', 'src/styles/*.css', '*.html', 'src/scss/*.scss'])
 });
 
 gulp.task('svgmin', function () {

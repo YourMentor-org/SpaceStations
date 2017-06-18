@@ -8,6 +8,18 @@ var svgmin = require('gulp-svgmin');
 var imagemin = require('gulp-imagemin');
 var svg2png = require('gulp-svg2png');
 var uglify = require('gulp-uglify');
+var pug = require('gulp-pug');
+
+gulp.task('templates', function buildHTML() {  
+    return gulp.src('*.pug') // возьми все файлы по этому адресу  
+        .pipe(pug({
+            pretty: true // в объекте указываются дополнительные настройки для pug; в данном случае говорим "сделай html-файл красивым, с отступами"
+        }).on('error', function(error) {
+            console.log(error); // если нашел ошибку при компиляции, покажи ее
+        }))
+        .pipe(gulp.dest('build')); // положи результат в эту папку
+});
+
 
 gulp.task('sass', function() { // Создаем таск "sass"
   return gulp.src('./src/scss/*.scss') // Берем источник

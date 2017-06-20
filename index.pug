@@ -1,85 +1,152 @@
-doctype
-html(lang"ru-RU")
-head
-	meta(charset="utf-8")
-	meta(http-equiv="X-UA-Compatible" content="IE=edge")
-	meta(name="viewport" content="width=device-width, initial-scale=1")
-	link(rel="stylesheet" href="src/styles/style.css")
-	link(rel="stylesheet" href="src/fonts/fonts.css")
-	link(link rel="stylesheet" type="text/css" href="src/styles/media.css")
-	title='SpaceStation'
-body
-div.container
-	img(src="src/img/header__background.png").slide
-	img(src="src/img/Searching-For-Something.jpg").slide
-	img(src="src/img/header__background.png").slide
-div.slider
-	button.slider__button
-	button.slider__button
-	button.slider__button
-section.header
-	header.header__menu
-		a(href="#").header__link
-		img(src="src/img/logo_top.png" alt="logo").header__img
-		a(href="#")#toggle.toggle
-		span#bar.bar
-		nav#header__nav.header__nav
-			ul#nav-list.nav-list
-				li.nav_list__item
-				a(href="#").nav_list__link='services'
-				li.nav_list__item
-				a(href="#").nav_list__link='how'
-				li.nav_list__item
-				a(href="#").nav_list__link='outwork'
-				li.nav_list__item
-				a(href="#").nav_list__link='testimonials'
-				li.nav_list__item
-				a(href="#").nav_list__link='team'
-				li.nav_list__item
-				a(href="#").nav_list__link='contact us'
-		button.header__button='Sign in'
-	div.header__about
-		div.header__text
-			img(src="src/img/Rocket.png" alt="Rocket" width="60" height="60").header__pic
-			h1.header__heading='Let`s explore the sky!'
-			p.header__subtitle='This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet.'
-		div.buttons
-			button.buttons__base buttons__base_left
-			button.buttons__base buttons__base_right
-			button.buttons__base buttons__base_circle
-section.base
-	div.base__list
-		ul.services
-			li.services__item
-				span.services__logo
-					img(src="src/img/logo-web.png" alt="" width="40" height="40").services__pic.services__pic_web
-					h2.services__heading='Web Design'
-					p.services__text='This is&nbsp;Photoshop`s version of&nbsp;Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.'
-			li.services__item
-				span.services__logo
-					img(src="src/img/logo-design.png" alt="" width="40" height="40").services__pic.services__pic_anchor
-					h2.services__heading='Logo Design'
-					p.services__text='This is&nbsp;Photoshop`s version of&nbsp;Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.'
-			li.services__item
-				span.services__logo
-					img(src="src/img/logo-print.png" alt="" width="40" height="40").services__pic.services__pic_print
-					h2.services__heading='Print Design'
-					p.services__text='This is&nbsp;Photoshop`s version of&nbsp;Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.'
-section.timetable
-	div.timetable__text
-		h1.timetable__heading='How we work'
-		p.timetable__subtitle='This is&nbsp;Photoshop`s version of&nbsp;Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.'
-	div.timetable__main
-		div.timetable__line
-		div.window.window_left
-			div.window__text
-				h3.window__title='We will discuss do you want'
-				p.window__subtitle='This is Photoshop`s version of Loram Ipsum.'
-	div.window.window_right"
-		div.window__text
-			h3.window__title='Client contact us'
-			p.window__subtitle='This is Photoshop`s version of Loram Ipsum.'
-		button.timetable__button='See all how we work'	
-
-
-									
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='src/styles/style.css')
+    link(rel='stylesheet', href='src/fonts/fonts.css')
+    link(rel='stylesheet', type='text/css', href='src/styles/media.css')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    title SpaceStation
+    // AlexanderE`s part
+  body
+    .container
+      img.slide(src='src/img/header__background.png')
+      img.slide(src='src/img/Searching-For-Something.jpg')
+      img.slide(src='src/img/header__background.png')
+    .slider
+      button.slider__button
+      button.slider__button
+      button.slider__button
+    section.header
+      header.header__menu
+        a.header__link(href='#')
+          img.header__img(src='src/img/logo_top.png', alt='logo')
+        a#toggle.toggle(href='#menu')
+          span#bar.bar
+        nav#header__nav.header__nav
+          ul#nav-list.nav-list
+            li.nav_list__item
+              a.nav_list__link(href='#') services
+            li.nav_list__item
+              a.nav_list__link(href='#') how
+            li.nav_list__item
+              a.nav_list__link(href='#') ourwork
+            li.nav_list__item
+              a.nav_list__link(href='#') testimonials
+            li.nav_list__item
+              a.nav_list__link(href='#') team
+            li.nav_list__item
+              a.nav_list__link(href='#') contact us
+        button.header__button Sign in
+      .header__about
+        .header__text
+          img.header__pic(src='src/img/Rocket.png', alt='Rocket', width='60', height='60')
+          h1.header__heading Let`s explore the sky!
+          p.header__subtitle
+            | This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet.
+        .buttons
+          button.buttons__base.buttons__base_left Learn more
+          button.buttons__base.buttons__base_right Contact us
+          button.buttons__base.buttons__base_circle or
+    section.base
+      .base__list
+        ul.services
+          li.services__item
+            span.services__logo
+              img.services__pic.services__pic_web(src='src/img/logo-web.png', alt='', width='40', height='40')
+            h2.services__heading Web Design
+            p.services__text
+              | This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.
+          li.services__item
+            span.services__logo
+              img.services__pic.services__pic_anchor(src='src/img/logo-design.png', alt='', width='40', height='40')
+            h2.services__heading Logo Design
+            p.services__text
+              | This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.
+          li.services__item
+            span.services__logo
+              img.services__pic.services__pic_print(src='src/img/logo-print.png', alt='', width='40', height='40')
+            h2.services__heading Print Design
+            p.services__text
+              | This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.
+    section.timetable
+      .timetable__text
+        h1.timetable__heading How we work
+        p.timetable__subtitle
+          | This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.
+      .timetable__main
+        .timetable__line
+        .window.window_left
+          .window__text
+            h3.window__title We will discuss do you want
+            p.window__subtitle This is Photoshop`s version of Loram Ipsum.
+        .window.window_right
+          .window__text
+            h3.window__title Client contact us
+            p.window__subtitle This is Photoshop`s version of Loram Ipsum.
+      button.timetable__button.timetable__button_red See all how we work
+    section.our-work
+      h2.our-work__title Our work
+      p.our-work__paragraph
+        | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+      .our-work__examples
+        .our-work__examples.example
+          img(src='src/img/Syllabus.png', alt='Sylabus')
+          button(type='button') Sylabus
+        .our-work__examples.example
+          img.example__image(src='src/img/contest.png', alt='Contest')
+          button(type='button') Contest
+        .our-work__examples.example
+          img.example__image(src='src/img/Wayfaring.png', alt='Travel')
+          button(type='button') Travel
+        .our-work__examples.example
+          img(src='src/img/shop.png', alt='Shop')
+          button(type='button') Shop
+      .our-work__navigation.arrow
+        button.arrow__left(type='button')
+        button(type='button')
+    section.testimonials
+      h1.testimonials__title Testimonials
+      p.testimonials__paragraph
+        | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+      .testimonials__reviews.reviews
+        .reviews__profile-pic
+          img(src='src/img/profile-pic.png', alt='profile-pic')
+        .reviews__review.review
+          h3.review__title
+            | Neil Armstrong 
+            span 1st man walk on the moon
+          p.review__paragraph
+            | “ Orion is great, you should try it.
+            | The component is very easy to understand,
+            | the value is great too. And last but not least, orion is my favorite services.”
+    section.team
+      .team__text
+        h2.team__title Meet the team
+        p.team__subtitle
+          | This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.
+      .team__menu
+        ul#catalog.catalog
+          li.catalog__item.showing
+            img.catalog__photo(src='src/img/first__photo.png', alt='', width='120', height='120')
+            h3.catalog__title Afnizar Nur Ghifari
+            p.catalog__subtitle Chief Executive Officer
+            a.catalog__social(href='#')
+              img.catalog__icons(src='src/img/social.png', alt='social')
+          li.catalog__item
+            img.catalog__photo(src='src/img/second__photo.png', alt='', width='120', height='120')
+            h3.catalog__title Henry Phillips
+            p.catalog__subtitle Black Belt UI/UX Strategist
+            a.catalog__social(href='#')
+              img.catalog__icons(src='src/img/social.png', alt='social')
+          li.catalog__item
+            img.catalog__photo(src='src/img/third__photo.png', alt='', width='120', height='120')
+            h3.catalog__title Gerald Elliott
+            p.catalog__subtitle Lead User Experience Manager
+            

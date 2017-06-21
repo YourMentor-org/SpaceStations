@@ -15,10 +15,66 @@ html
     title SpaceStation
     // AlexanderE`s part
   body
-    include ../partials/slider.pug
+    .container
+      img.slide(src='src/img/header__background.png')
+      img.slide(src='src/img/Searching-For-Something.jpg')
+      img.slide(src='src/img/header__background.png')
+    .slider
+      button.slider__button
+      button.slider__button
+      button.slider__button
     section.header
-      include ../partials/header.pug 
-    include ../partials/header_nav.pug
+      header.header__menu
+        a.header__link(href='#')
+          img.header__img(src='src/img/logo_top.png', alt='logo')
+        a#toggle.toggle(href='#menu')
+          span#bar.bar
+        nav#header__nav.header__nav
+          ul#nav-list.nav-list
+            li.nav_list__item
+              a.nav_list__link(href='#') services
+            li.nav_list__item
+              a.nav_list__link(href='#') how
+            li.nav_list__item
+              a.nav_list__link(href='#') ourwork
+            li.nav_list__item
+              a.nav_list__link(href='#') testimonials
+            li.nav_list__item
+              a.nav_list__link(href='#') team
+            li.nav_list__item
+              a.nav_list__link(href='#') contact us
+        button.header__button Sign in
+      .header__about
+        .header__text
+          img.header__pic(src='src/img/Rocket.png', alt='Rocket', width='60', height='60')
+          h1.header__heading Let`s explore the sky!
+          p.header__subtitle
+            | This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet.
+        .buttons
+          button.buttons__base.buttons__base_left Learn more
+          button.buttons__base.buttons__base_right Contact us
+          button.buttons__base.buttons__base_circle or
+    section.base
+      .base__list
+        ul.services
+          li.services__item
+            span.services__logo
+              img.services__pic.services__pic_web(src='src/img/logo-web.png', alt='', width='40', height='40')
+            h2.services__heading Web Design
+            p.services__text
+              | This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.
+          li.services__item
+            span.services__logo
+              img.services__pic.services__pic_anchor(src='src/img/logo-design.png', alt='', width='40', height='40')
+            h2.services__heading Logo Design
+            p.services__text
+              | This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.
+          li.services__item
+            span.services__logo
+              img.services__pic.services__pic_print(src='src/img/logo-print.png', alt='', width='40', height='40')
+            h2.services__heading Print Design
+            p.services__text
+              | This is Photoshop`s version of Lorem Ipsum. proim gravida nibh vel velit auctor aliquet mauris.
     section.timetable
       .timetable__text
         h1.timetable__heading How we work

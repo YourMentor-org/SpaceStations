@@ -11,7 +11,7 @@ var uglify = require('gulp-uglify');
 var pug = require('gulp-pug');
 
 gulp.task('templates', function buildHTML() {  
-    return gulp.src('*.pug') // возьми все файлы по этому адресу  
+    return gulp.src('src/templates/*.pug') // возьми все файлы по этому адресу  
         .pipe(pug({
             pretty: true // в объекте указываются дополнительные настройки для pug; в данном случае говорим "сделай html-файл красивым, с отступами"
         }).on('error', function(error) {

@@ -1,0 +1,6 @@
+- var nav = [{name:"services",href:"#"},{name:"how",href:"#"},{name:"ourwork",href:"#"},{name:"testimonials",href:"#"},{name:"team",href:"#"},{name:"contact us",href:"#"}]
+
+
+each item in nav
+	li.nav_list__item
+		a(href=item.href).nav_list__link=item.name
